@@ -2,4 +2,4 @@ def gcd(a, b):
     return a if b == 0 else gcd(b, a % b)
 
 
-print(gcd(3, 15))
+print(gcd(3, 5))
