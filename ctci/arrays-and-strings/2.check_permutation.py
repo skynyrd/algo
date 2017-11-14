@@ -32,4 +32,4 @@ def check_permutation(string1, string2):
     return True
 
 
-print(check_permutation("A C", "C A"))
+print(check_permutation("A C", "CA "))
