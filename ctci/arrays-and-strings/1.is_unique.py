@@ -3,6 +3,7 @@
 
 
 # O(n) solution, can be discussed that its O(1) as loop will never iterate more than 128 chars. Space = O(c)
+
 def is_unique_chars(input_string):
     if len(input_string) > 128:
         return False

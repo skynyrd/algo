@@ -36,7 +36,8 @@ def bfs(root: Node):
 
     return nodes
 
+
 print(bfs(node1))
 
-if 3 in [1,2] and 5 in [1,2]:
+if 3 in [1, 2] and 5 in [1, 2]:
     print("s")
