@@ -1,14 +1,14 @@
-def substring_search(input_string, search_string):
-    search_index, input_index, cursor_for_input = 0, 0, 0
+def substring_search(input_string, pattern):
+    for index_string in range(0, len(input_string) - len(pattern)):
+        index_pattern = 0
+        for index_pattern in range(0, len(pattern)):
+            if input_string[index_string + index_pattern] != pattern[index_pattern]:
+                break
 
-    while search_index < len(search_string) and input_index < len(input_string):
-        if search_string[search_index] == input_string[cursor_for_input]:
-            cursor_for_input += 1
-            search_index += 1
-            continue
-        else:
-            input_index += 1
-            search_index = 0
+        if index_pattern == len(pattern) - 1:
+            return index_string
+
+    return len(input_string)
 
 
-print(substring_search("axyzde", "xsy"))
+print(substring_search("asdaxyzde", "xyz"))
