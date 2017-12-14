@@ -13,6 +13,7 @@ def birthday_cake_candles(n, ar):
 
     return max
 
+
 n = int(input().strip())
 ar = list(map(int, input().strip().split(' ')))
 result = birthday_cake_candles(n, ar)
