@@ -1,14 +1,12 @@
 # The adjacency matrix of an undirected graph is symmetric
 # The adjacency matrix of an directed graph is asymmetric
-import numpy as np
-
 from graph.GraphBase import GraphBase
 
 
 class AdjacencyMatrixGraph(GraphBase):
     def __init__(self, num_vertices, directed=False):
         super(AdjacencyMatrixGraph, self).__init__(num_vertices, directed)
-        self.matrix = np.zeros((num_vertices, num_vertices))
+        self.matrix = [[0 for _ in range(num_vertices)] for _ in range(num_vertices)]
 
     def get_edge_weight(self, v1, v2):
         return self.matrix[v1][v2]
