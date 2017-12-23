@@ -45,3 +45,33 @@ def is_permutation_of_palindrome(input_string):
 
 print(is_permutation_of_palindrome("Tact Coa"))
 
+# Alternative approach:
+
+def perpalindrome(input_str):
+    input_str = input_str.replace(" ", "")
+
+    char_freq = {}
+    for char in input_str:
+        if not char_freq.get(char, None):
+            char_freq[char] = 1
+        else:
+            char_freq[char] += 1
+
+    odds = 0
+    evens = 0
+
+    for key in char_freq:
+        if char_freq[key] % 2 == 0:
+            evens += 1
+        else:
+            odds += 1
+
+    if len(input_str) % 2 == 0:
+        if odds > 0:
+            return False
+        else:
+            return True
+    else:
+        if odds > 1:
+            return False
+        return True

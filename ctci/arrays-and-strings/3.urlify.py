@@ -30,4 +30,4 @@ def replace_spaces(input_string, true_length):
     return ''.join(input_array)
 
 
-print(replace_spaces("Mahmut inci ku su      ", 17))
+print(replace_spaces("asddsa qweq vv bt      ", 17))

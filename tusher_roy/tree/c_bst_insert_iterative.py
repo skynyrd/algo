@@ -32,11 +32,13 @@ def bst_insert_iterative(root: TreeNode, data):
 
     return node
 
+
 # Complexity: O(logn)
 
-# root = TreeNode(5)
-# bst_insert_iterative(root, 3)
-# bst_insert_iterative(root, 1)
-# bst_insert_iterative(root, 2)
-# bst_insert_iterative(root, 4)
+# root = TreeNode(10)
+# bst_insert_iterative(root, -5)
+# bst_insert_iterative(root, 16)
+# bst_insert_iterative(root, -8)
+# bst_insert_iterative(root, 7)
+# bst_insert_iterative(root, 18)
 # pass

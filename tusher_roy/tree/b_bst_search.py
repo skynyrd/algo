@@ -7,6 +7,6 @@ def bst_search(root: TreeNode, key):
     if root.value == key:
         return root
     elif root.value < key:
-        bst_search(root.right, key)
+        return bst_search(root.right, key)
     else:
-        bst_search(root.left, key)
+        return bst_search(root.left, key)

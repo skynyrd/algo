@@ -7,7 +7,7 @@ from common.graph.Vertex import Vertex
 def make_it_visited(vertex: Vertex, stack, visited):
     visited.add(vertex.id)
 
-    for adj_vertex in vertex.adjacent_vertices:
+    for adj_vertex in vertex.adjarcent_vertices:
         if adj_vertex.id in visited:
             continue
 
