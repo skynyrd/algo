@@ -8,21 +8,19 @@ def print_tree(root: TreeNode):
     if not root:
         return None
 
-    queue = Queue()
-    queue.enqueue(root)
-    queue.enqueue(None)
+    queue = [root, None]
 
-    while not queue.is_empty() and queue.get_len() > 1:
-        current = queue.dequeue()
+    while len(queue) > 1:
+        current = queue.pop(0)
         if current is None:
-            queue.enqueue(None)
+            queue.append(None)
             print("\n")
             continue
 
         if current.left:
-            queue.enqueue(current.left)
+            queue.append(current.left)
         if current.right:
-            queue.enqueue(current.right)
+            queue.append(current.right)
 
         print(current.value, end=" ")
 

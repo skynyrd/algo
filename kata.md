@@ -14,13 +14,14 @@
 
 ## Trees
 
-* depth first binary traversal 5
-* bst search 4
-* bst iterative insert 7
-* same tree 4
-* tree size 5
-* tree height 5
-* lowest common ancestor bst 4
-* is_bst 2
+* depth first binary traversal 6
+* bst search 5
+* bst iterative insert 8
+* same tree 5
+* tree size 6
+* tree height 6
+* lowest common ancestor bst 6
+* is_bst 3
+* level_order_traversal 3
 
 
